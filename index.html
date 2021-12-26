@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="header-menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>Destination</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-icon prefect-centering">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+            <div class="drop-down-menu prefect-centering" onclick="showmenu()">
+                <a href="#">
+                    <i class="fa fa-bars" id="menu-avaz"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+        <ul class="header-menu-burger" id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Destination</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+
+
+    <main>
+        <section class="slider">
+            <div class="slider-text">
+               <h3>Australia</h3>
+               <p>Pixle prefect design width awesome contents</p>
+               <a class="slider-btn" href="#">Explore new</a>
+            </div>
+        </section>
+        <section class="search-bar">
+            <h3>Where you want to go?</h3>
+            <form action="#" class="search-form">
+                <input type="text" placeholder="where to go?">
+                <input type="text" placeholder="where to go?">
+                <input type="text" placeholder="where to go?">
+                <button class="search-btn" type="submit">search</button>
+            </form>
+        </section>
+        <section class="popular">
+            <section class="row popular-heading">
+                <h3 class="popular-title">popular Destination</h3>
+                <p class="popular-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nemo.
+                 Lorem ipsum dolor sit amet.</p>
+            </section>
+            <section class="row popular-container">
+                <article>
+                    <img src="images/1.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Italy <a href=""> 07 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/2.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Brazil <a href=""> 03 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/3.png" alt="">
+                    <div class="popular-image-info">
+                        <p>America <a href=""> 10 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/4.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Nepal <a href=""> 02 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/5.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Maldives <a href=""> 02 Places</a></p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/6.png" alt="">
+                    <div class="popular-image-info">
+                        <p>Maldives <a href=""> 02 Places</a></p>
+                    </div>
+                </article>
+                
+
+            </section>
+        </section>
+        <section class="news-letter">
+            <div class="news-letter-container row">
+
+                <div class="news-letter-text">
+                    <h4>subscribe our newsLetter</h4>
+                    <p>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+                </div>
+                
+                <div class="news-letter-form">
+                    <input type="email" placeholder="your email">
+                    <button class="news-letter-btn" type="submit">subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video-container">
+                <h3>enjoy video</h3>
+                <div class="video-btn">
+                    <a href="#">
+                        <i class="fa fa-play"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="left-footer">
+            <img src="images/footer_logo.png" alt="" class="footer-img">
+            <ul class="footer-info">
+                <li>5th flora, 700/D kings road, green</li>
+                <li>lane New York-1782
+                </li>
+                <li>+10 367 826 2567</li>
+                <li>contact@carpenter.com</li>
+            </ul>
+        </div>
+        <div class="right-footer">
+            <h3 class="footer-title">Popular destination</h3>
+            <ul class="links">
+                <li>
+                    <a href="#">
+                        Indonesia</a>
+                </li>
+                <li>
+                    <a href="#">
+                        India</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Italy</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Franch</a>
+                </li>
+                <li>
+                    <a href="#">
+                        America</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Switzerland</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Canada</a>
+                </li>
+                <li>
+                    <a href="#">
+                        England</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function showmenu(){
+            var menu=document.getElementById("menu");
+            if(menu.className=="header-menu-burger"){
+                menu.className+=" show"
+            }else{
+                menu.className="header-menu-burger"
+            }
+            var menuavas=document.getElementById('menu-avaz');
+            if(menuavas.className=="fa fa-bars"){
+                menuavas.className="far fa-arrow-alt-circle-right";
+            }else{
+                menuavas.className="fa fa-bars"; 
+            }
+        }
+       
+
+    </script>
+</body>
+</html>
